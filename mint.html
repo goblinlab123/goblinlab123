@@ -1,0 +1,54 @@
+<div class="px-4 py-8">
+    <div class="md:container md:mx-auto divide-y-4 divide-yellow-600 divide-dashed pb-20">
+        <div class="mb-10 md:mb-20">
+            <div class="flex justify-center px-4 pb-6 md:pt-10">
+                <div class="flex flex-col justify-center">
+                    <h1 style="font-size: 50px; margin-top: 40px;" class="mint_headline pb-6 text-center text-3xl">Mint
+                        a Goblin Brain
+                    </h1>
+                </div>
+            </div>
+            <div style="padding-left: 200px; padding-top: 70px;"
+                class="some_rndm_div md:pt-20 grid grid-cols-1 md:grid-cols-11 gap-8 lg:gap-16 mb-8 px-4 md:px-8 lg:px-16 xl:px-32">
+                <div class="justify-center md:col-span-5 self-center md:order-3 gbdiv"><img src="./mint_files/goblinbrain.png"
+                        alt="Goblin Brain" class="w-full pt-10 md:pt-0">
+                    <p class="mint_text">Sold 8344 of 11,111 Goblin
+                        Brains</p>
+                </div>
+                <div class="space-y-6 text-left md:col-span-5 self-center md:order-1 mint_div">
+
+
+
+
+
+                    <div class="mint_wrap-text_content">
+                        <div class="mint_wrap-counter_wrap">
+                            <div class="mint_wrap-counter">
+                                <button onclick="minus()" class="minus" style="user-select: none;">-</button>
+                                <input id="quantity_input" class="amountGoblinBrain" type="text" value="1" readonly />
+                                <button onclick="plus()" class="plus" style="user-select: none;">+</button>
+                            </div>
+
+                            <div class="mint_wrap-counter-result" style="margin-top: 30px;">
+                                <span id="solanaAmount">3</span> SOL
+                            </div>
+
+                            <button onclick="phantom_connect()" class="mint_wrap-counter-button mintButton"
+                                id="connect_button" style="user-select: none;">
+                                Connect
+                            </button>
+                            <button onclick="phantom_mint()" class="mint_wrap-counter-button mintButton hidden"
+                                id="mint_button" style="user-select: none;">
+                                Mint
+                            </button>
+                            <p id="p_connected-to" class="hidden">Connected to: <span style="font-weight: bold;" id="public-key"></span></p>
+
+                            <div class="mint_wrap-error_message hidden">
+                                <p style="color: red; margin-top: 15px; font-weight: bold;">Transaction failed! Please try again...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
